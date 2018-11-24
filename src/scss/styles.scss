@@ -1,0 +1,46 @@
+//link materilialize
+@import 'libs/materialize.scss';
+
+// global styles
+html,body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: #111;
+	background-color: #eee;
+}
+
+//header
+.header{
+	margin-bottom: 30px;
+	&-title{
+		margin: 0;
+	}
+	&-selected{
+		margin-right: 7em;
+	}
+	&-content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+//list
+.list{
+	&-title{
+		margin: 0;
+		margin-left: 30px;
+		color: #000;
+	}
+	&-list{
+		
+	}
+}
+
+.checkedtask{
+	span{
+		text-decoration: line-through;
+	}
+}

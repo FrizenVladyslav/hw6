@@ -1,3 +1,5 @@
+@import "./libs/materialize.scss";
+
 // global styles
 html,body{
 	margin: 0;
@@ -10,41 +12,29 @@ html,body{
 	overflow: hidden;
 }
 
-//carousel
-.carousel{
+.box{
 	width: 100%;
+	position: relative;
 	height: 100vh;
-	&-item{
-		width: 100%;
-		height: 100%;
-		display: none;
-	}
-	.active{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	&-btn{
-		content: '\f060';
-		height: 100%;
-		width: 70px;
+	background-color: aqua;
+	margin: 0 auto;
+	.chip{
 		position: absolute;
-		background-color: #000;
-		opacity: .1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		transition: .3s;
-		&:last-child{
-			right: 0;
-			top: 0;
+		&:first-child{
+			left: 300px;
+			top: 100px;
 		}
-		i{
-			color: #fff
+		&:last-child{
+			left: 150px;
+			top: 150px;
 		}
 		&:hover{
-			opacity: 0.4;
+			cursor: pointer;
 		}
 	}
+	i:hover{
+		transition: .4s;
+		color: red;
+	}
 }
+

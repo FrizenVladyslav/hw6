@@ -1,5 +1,4 @@
-//init DOM
-export const leftBtn = document.getElementById('left')
-export const rightBtn = document.getElementById('right')
-export const carousel = document.querySelector('.carousel')
-export let slides = document.querySelectorAll('.carousel-item')
+export const box = document.querySelector('.box')
+export let tags = document.querySelectorAll('.chip')
+export let closeBtns = document.querySelectorAll('.fa-times')
+
